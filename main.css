@@ -1,0 +1,49 @@
+nav {
+    display: none;
+  }
+#hamburger {
+    display: block;
+    cursor: pointer;
+}
+#hamburger img {
+    width: 60px;
+}
+
+/* show navigation when toggle class is added */
+.toggle nav {
+    display: block;
+}
+
+/* styles for navigation links */
+nav a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+  
+  label[for="toggle"] {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    label[for="toggle"] {
+      display: block;
+      cursor: pointer;
+    }
+    
+    nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    #toggle:checked ~ nav {
+      display: block;
+    }
+  }
+  
